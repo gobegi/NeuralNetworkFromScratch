@@ -58,5 +58,7 @@ while True:
     o_pre = b_h_o + w_h_o @ h
     o = 1 / (1 + np.exp(-o_pre))
 
-    plt.title(f"Subscribe if its a {o.argmax()} :)")
+    print(o)
+
+    plt.title(f"This is the number {o.argmax()} :)")
     plt.show()
